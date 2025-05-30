@@ -1,3 +1,12 @@
+const fs = require('fs');
+const path = require('path');
+
+if (process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON) {
+    const credPath = path.join(__dirname, 'secret.json');
+    fs.writeFileSync(credPath, process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON);
+    process.env.GOOGLE_APPLICATION_CREDENTIALS = credPath;
+}
+
 const express = require('express'); // import express
 const app = express(); // express function call
 const port = process.env.PORT || 3000;
