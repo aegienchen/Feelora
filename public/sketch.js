@@ -43,7 +43,7 @@ let flower_info_palette = 5; // row 5 - flower info box
 function preload() {
     color_palette = loadTable("./color.csv", "csv", "header");
     bg_image = loadImage("./image/background.png");
-    gif_image = loadImage("./image/flowerBook.gif"); 
+    gif_image = loadImage("./image/flowerBook.GIF"); 
     music= loadSound("./music/music.mp3");
 }
 
