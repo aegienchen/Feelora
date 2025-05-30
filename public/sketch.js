@@ -217,7 +217,7 @@ function showFlowerBook(){
         noStroke();
         textSize(14);
         textAlign(LEFT, TOP);
-        text("📖💐 About FLORA:\n\n\❓Wondering about the flower’s score, magnitude, or emotional tone? Just hover over the question mark in the top-right corner!\n\n🌞Click the sun in the top-left to enter your diary and see your emotion bloom as a flower!\n\n🌸Then,you can click the flower to check the flower's data based on your input.\n\n  👉Come on, try it out👈\n(Click anywhere to close. Reopen it from the bottom-right corner.) ", width / 2 - 115, height / 2 - 180, 250);
+        text("📖💐 About FEELORA:\n\n\🌞Click the sun in the top-left to enter your diary and see your emotion bloom as a flower!\n\n🌸Then,you can click the flower to check the flower's data based on your input.\n\n❓Wondering about the flower’s score, magnitude, or emotional tone? Just hover over the question mark in the top-right corner!\n\n👉Come on, try it out👈\n(Click anywhere to close. Reopen it from the bottom-right corner.) ", width / 2 - 115, height / 2 - 180, 250);
     }
 }
 
