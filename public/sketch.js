@@ -371,7 +371,7 @@ function handlePaste(e) {
 function setup() {
     // ----- related to API -----
     // socket = io.connect('http://localhost:3000');
-    socket = io.connect('');
+    socket = io.connect(window.location.origin);
     socket.on('analyze_result', (result) => {
         createFlower(result.score, result.magnitude, result.word_count, result.pos_proportion);
     })
