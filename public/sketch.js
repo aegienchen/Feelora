@@ -200,7 +200,7 @@ function showHelpSign(){
 
 // ----- create flower book (information) -----
 function createFlowerBook(){
-    gif_image = createImg("./image/flowerBook.gif");
+    gif_image = createImg("./image/flowerBook.GIF");
     gif_image.size(70, 70);
     gif_image.position(width - 80, height - 100);
     gif_image.style('border', 'none');
