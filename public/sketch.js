@@ -244,7 +244,7 @@ function dimBackground(){
     if(active_flower){
         push();
         noStroke();
-        fill(color(65, 27, 68, 0.3));
+        fill(color(46, 5, 100, 0.5));
         rect(0, 0, width, height);
         pop();
 
