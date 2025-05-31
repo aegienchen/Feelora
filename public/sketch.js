@@ -21,6 +21,7 @@ let max_y_distance = 100; // Y 座標距離畫布頂部的最小間距
 let active_flower = null;
 let flower_info_box_w;
 let flower_info_box_h;
+let flower_info_box_h_dynamic;
 let flower_info_box_x;
 let flower_info_box_y;
 let flower_move = null;
@@ -234,6 +235,7 @@ function showFlowerInfo(){
     }else{
         if (active_flower) {
             let flower_info_box = new FlowerInfoBox(flower_info_box_x, flower_info_box_y, flower_info_box_w, flower_info_box_h, active_flower, flower_info_palette);
+            flower_info_box_h_dynamic = flower_info_box.getDynamicHeight();
             flower_info_box.display();
         }
     }
@@ -322,8 +324,8 @@ function mousePressed() {
         active_flower &&
         mouseX > flower_info_box_x + flower_info_box_w - 60 &&
         mouseX < flower_info_box_x + flower_info_box_w - 10 &&
-        mouseY > flower_info_box_y + flower_info_box_h - 30 &&
-        mouseY < flower_info_box_y + flower_info_box_h - 10
+        mouseY > flower_info_box_y + flower_info_box_h_dynamic - 30 &&
+        mouseY < flower_info_box_y + flower_info_box_h_dynamic - 10
     ) {
         flower_move_back = active_flower;
         active_flower = null;

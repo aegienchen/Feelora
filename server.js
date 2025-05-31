@@ -19,8 +19,8 @@ const io = socket(server); // create socket
 io.sockets.on('connection', newConnection);
 console.log("Socket ready!\n");
 
-const language = require('@google-cloud/language'); // Imports the Google Cloud client library
-const client = new language.LanguageServiceClient(); // Instantiates a client
+const language = require('@google-cloud/language'); // imports the Google Cloud client library
+const client = new language.LanguageServiceClient(); // instantiates a client
 console.log("Google client set!\n")
 
 
